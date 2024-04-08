@@ -75,7 +75,7 @@ export function assertArray(
 export function assertObject(
     value: any,
     message?: string,
-): asserts value is Array<any>  {
+): asserts value is object {
     if (typeof value != 'object' || value == null ) {
         throw new AssertionError(`Expected to be an object: ${message}.`);
     }
